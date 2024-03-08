@@ -17,11 +17,10 @@ class SolutionsList(generics.ListAPIView):
         difficulty = self.request.query_params.get('difficulty', None)
 
         if language:
-            queryset = queryset.filter(programming_languages__name=language)
+            queryset = queryset.filter(programming_languages__name__iexact=language)
         if company:
-            queryset = queryset.filter(companies__name=company)
+            queryset = queryset.filter(companies__name__iexact=company)
         if difficulty:
-            queryset = queryset.filter(difficulty=difficulty)
-
+            queryset = queryset.filter(difficulty__iexact=difficulty)
 
         return queryset
