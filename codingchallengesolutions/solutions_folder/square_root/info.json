@@ -1,0 +1,13 @@
+{
+    "difficulty": "easy",
+    "python_runtime": 1.7,
+    "companies": [
+        "Amazon",
+        "Facebook",
+        "Microsoft"
+    ],
+    "title": "Square Root",
+    "site": "WorkAt.tech",
+    "url": null,
+    "python_solution": "square_root/square_root.py"
+}

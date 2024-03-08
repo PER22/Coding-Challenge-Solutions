@@ -1,0 +1,17 @@
+{
+    "difficulty": "easy",
+    "java_runtime": 1.74,
+    "companies": [
+        "Microsoft",
+        "LinkedIn",
+        "Goldman Sachs",
+        "Juniper Networks",
+        "Synopsis",
+        "Zoho",
+        "Snapdeal"
+    ],
+    "title": "Merge Two Sorted Arrays",
+    "site": "WorkAt.tech",
+    "url": null,
+    "java_solution": "merge_two_sorted_arrays/merge_two_sorted_arrays.java"
+}

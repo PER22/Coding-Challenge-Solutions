@@ -1,0 +1,11 @@
+{
+    "difficulty": "easy",
+    "python_runtime": 1.69,
+    "companies": [
+        "Amazon"
+    ],
+    "title": "Merge Sorted Subarrays",
+    "site": "WorkAt.tech",
+    "url": null,
+    "python_solution": "merge_sorted_subarrays/merge_sorted_subarrays.py"
+}

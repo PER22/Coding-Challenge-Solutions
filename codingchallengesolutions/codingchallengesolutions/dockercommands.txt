@@ -1,0 +1,4 @@
+docker pull postgres
+docker run --name challenge_db -e POSTGRES_PASSWORD='recommended as it could pose a serious security risk' -p 5432:5432 -d postgres\n
+docker exec -it challenge_db bash
+psql -U postgres

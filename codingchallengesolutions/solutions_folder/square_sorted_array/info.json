@@ -1,0 +1,12 @@
+{
+    "difficulty": "easy",
+    "java_runtime": 0.68,
+    "companies": [
+        "Amazon",
+        "VMWare"
+    ],
+    "title": "Square Sorted Array",
+    "site": "WorkAt.tech",
+    "url": null,
+    "java_solution": "square_sorted_array/square_sorted_array.java"
+}

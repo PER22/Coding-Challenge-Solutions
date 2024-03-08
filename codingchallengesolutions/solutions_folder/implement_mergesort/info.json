@@ -1,0 +1,19 @@
+{
+    "difficulty": "easy",
+    "python_runtime": 4.42,
+    "companies": [
+        "Amazon",
+        "Goldman Sachs",
+        "Grofers",
+        "Medlife",
+        "Microsoft",
+        "Oracle",
+        "Paytm",
+        "Qualcomm",
+        "Snapdeal"
+    ],
+    "title": "Implement Mergesort",
+    "site": "WorkAt.tech",
+    "url": null,
+    "python_solution": "implement_mergesort/implement_mergesort.py"
+}

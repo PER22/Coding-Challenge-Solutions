@@ -1,0 +1,9 @@
+{
+    "difficulty": "easy",
+    "cpp_runtime": 0.56,
+    "companies": [],
+    "title": "Cumulative Sum",
+    "site": "WorkAt.tech",
+    "url": null,
+    "cpp_solution": "cumulative_sum/solution.cpp"
+}

@@ -1,0 +1,9 @@
+brew install postgresql
+brew services start postgresql 
+CREATE DATABASE challenge_db;
+CREATE USER challenge_db_administrator WITH PASSWORD 'inherent security risks associated with being dumb';
+ALTER ROLE challenge_db_administrator SET client_encoding TO 'utf8';
+ALTER ROLE challenge_db_administrator SET default_transaction_isolation TO 'read committed';
+ALTER ROLE challenge_db_administrator SET timezone TO 'UTC';
+GRANT ALL PRIVILEGES ON DATABASE challenge_db TO challenge_db_administrator;
+\q

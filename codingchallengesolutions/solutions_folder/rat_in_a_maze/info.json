@@ -1,0 +1,12 @@
+{
+    "difficulty": "medium",
+    "python_runtime": 0.42,
+    "companies": [
+        "Amazon",
+        "Microsoft"
+    ],
+    "title": "Rat In A Maze",
+    "site": "WorkAt.tech",
+    "url": null,
+    "python_solution": "rat_in_a_maze/rat_in_a_maze.py"
+}

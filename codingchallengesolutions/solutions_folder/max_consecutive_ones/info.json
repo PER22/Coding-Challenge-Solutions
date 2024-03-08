@@ -1,0 +1,12 @@
+{
+    "difficulty": "easy",
+    "python_runtime": 0.34,
+    "companies": [
+        "Amazon",
+        "VMware"
+    ],
+    "title": "Max Consecutive Ones",
+    "site": "WorkAt.tech",
+    "url": null,
+    "python_solution": "max_consecutive_ones/max_consecutive_ones.py"
+}

@@ -1,0 +1,12 @@
+{
+    "difficulty": "easy",
+    "python_runtime": 0.16,
+    "companies": [
+        "Amazon",
+        "Google"
+    ],
+    "title": "Pascals Triangle",
+    "site": "WorkAt.tech",
+    "url": null,
+    "python_solution": "pascals_triangle/pascals_triangle.py"
+}

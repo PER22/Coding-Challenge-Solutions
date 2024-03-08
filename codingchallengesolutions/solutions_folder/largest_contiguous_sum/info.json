@@ -1,0 +1,26 @@
+{
+    "difficulty": "easy",
+    "python_runtime": 0.84,
+    "companies": [
+        "Amazon",
+        "D. E. Shaw",
+        "Facebook",
+        "Goldman Sachs",
+        "Google",
+        "LinkedIn",
+        "Microsoft",
+        "Ola",
+        "PayPal",
+        "PayU",
+        "Samsung",
+        "Snapdeal",
+        "Teradata",
+        "Visa",
+        "Yahoo",
+        "Zoho"
+    ],
+    "title": "Largest Contiguous Sum",
+    "site": "WorkAt.tech",
+    "url": null,
+    "python_solution": "largest_contiguous_sum/largest_contiguous_sum.py"
+}

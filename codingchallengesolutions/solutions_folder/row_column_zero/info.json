@@ -1,0 +1,12 @@
+{
+    "difficulty": "medium",
+    "python_runtime": 0.6,
+    "companies": [
+        "Amazon",
+        "Oracle"
+    ],
+    "title": "Row Column Zero",
+    "site": "WorkAt.tech",
+    "url": null,
+    "python_solution": "row_column_zero/row_column_zero.py"
+}

@@ -1,0 +1,9 @@
+{
+    "difficulty": "easy",
+    "python_runtime": 0.13,
+    "companies": [],
+    "title": "Arithmetic Sequence",
+    "site": "WorkAt.tech",
+    "url": null,
+    "python_solution": "arithmetic_sequence/arithmetic_sequence.py"
+}

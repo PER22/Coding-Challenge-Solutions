@@ -1,0 +1,11 @@
+{
+    "difficulty": "easy",
+    "python_runtime": 0.41,
+    "companies": [
+        "Amazon"
+    ],
+    "title": "Search Range",
+    "site": "WorkAt.tech",
+    "url": null,
+    "python_solution": "search_range/search_range.py"
+}
