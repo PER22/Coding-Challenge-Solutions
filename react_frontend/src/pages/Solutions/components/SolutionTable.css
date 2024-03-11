@@ -1,0 +1,9 @@
+.solutions-section {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+        flex-grow: 1; 
+    overflow-y: auto;
+}

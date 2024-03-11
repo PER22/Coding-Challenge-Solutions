@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Typography } from '@mui/material';
 import { fetchSolutions } from '../../utilities/solutions-service';
+import { fetchCompanies } from '../../utilities/companies-service'
 import SolutionTable from './components/SolutionTable';
 import SolutionFilterControls from './components/SolutionFilterControls'
-import { IconButton } from '@mui/material';
-import FilterListIcon from '@mui/icons-material/FilterList';
-import FilterListOffIcon from '@mui/icons-material/FilterListOff';
+import './SolutionsPage.css'
 
 
 const SolutionsPage = () => {
@@ -14,12 +14,19 @@ const SolutionsPage = () => {
     companies: [],
     difficulty: null
   });
-  const [filtersShown, setFiltersShown] = useState(true);
-  const showFilters = () => {setFiltersShown(true)}
-  const hideFilters = () => {setFiltersShown(false)}
+  const [companies, setCompanies] = useState([]);
   
+  //Companies
+  useEffect(() => {
+    async function getCompanies() {
+      const response = await fetchCompanies();
+      setCompanies(response);
+    }
+    getCompanies();
+  }, []);
 
-  //Filters
+
+  //Fetch upon filter change
   useEffect(() => {
     async function getSolutions(filters) {
       const response = await fetchSolutions(filters);
@@ -29,19 +36,15 @@ const SolutionsPage = () => {
   }, [filters]);
 
   return (
-    <div>
-      <IconButton onClick={filtersShown? hideFilters : showFilters}>
-        {filtersShown ?  <FilterListOffIcon sx={{color: 'white'}}/> : <FilterListIcon sx={{color: 'white'}}/>}
-      </IconButton>
-      {filtersShown &&
-        <>
-          <h1>Filters</h1>
-          <SolutionFilterControls filters={filters} setFilters={setFilters} />
-        </>
-      }
-
-      <h1>Solutions</h1>
-      <SolutionTable solutions={solutions} ></SolutionTable>
+    <div id="solutions-page">
+      <div id="filters-section">
+        <Typography>Filters</Typography>
+        <SolutionFilterControls filters={filters} setFilters={setFilters} companies={companies}/>
+      </div>
+      <div className="solutions-section">
+        <Typography>Solutions</Typography>
+        <SolutionTable solutions={solutions}></SolutionTable>
+      </div>
     </div>
   );
 };

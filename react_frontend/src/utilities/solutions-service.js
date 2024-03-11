@@ -6,5 +6,6 @@ export async function fetchSolutions(filters={}) {
         language: filters.language || null, 
         companies: filters.companies || null, 
         difficulty: filters.difficulty || null});
+        console.log("Response: ", response);
     return response;
 }

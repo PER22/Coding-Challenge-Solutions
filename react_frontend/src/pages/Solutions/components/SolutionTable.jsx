@@ -6,37 +6,54 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import './SolutionTable.css'
 
 function SolutionTable({ solutions }) {
   return (
     <TableContainer component={Paper} sx={{
-      // General styles
-      maxWidth: 650,
-      margin: '0 auto',
-      // Styles for light mode
+      width: '80%',
       '@media (prefers-color-scheme: dark)': {
-        bgcolor: '#ffffff', // Background color for the table container
-        color: '#213547', // Text color
-        // Further customization can go here
+        bgcolor: '#ffffff',
+        color: '#213547',
+
       }
     }}>
-      <Table aria-label="solutions table">
+      <Table stickyHeader aria-label="solutions table">
         <TableHead>
           <TableRow sx={{
             '@media (prefers-color-scheme: dark)': {
-              // Styles for the table header in light mode
-              // Example: changing the background color of the header row
               bgcolor: '#1a1a1a',
               '& .MuiTableCell-head': {
-                color: 'white', // Text color for the header cells
-                fontSize: 'larger'
+                color: 'white',
+
               },
-            },
+            }, fontSize: 'larger',
+
           }}>
-            <TableCell>Title</TableCell>
-            <TableCell align="right">Difficulty</TableCell>
-            <TableCell align="right">Companies</TableCell>
-            <TableCell align="right">Programming Languages</TableCell>
+            <TableCell sx={{
+              '@media (prefers-color-scheme: dark)': {
+                bgcolor: '#1a1a1a',
+                color: 'white',
+              },
+            }}>Title</TableCell>
+            <TableCell align="right" sx={{
+              '@media (prefers-color-scheme: dark)': {
+                bgcolor: '#1a1a1a',
+                color: 'white',
+              },
+            }}>Difficulty</TableCell>
+            <TableCell align="right" sx={{
+              '@media (prefers-color-scheme: dark)': {
+                bgcolor: '#1a1a1a',
+                color: 'white',
+              },
+            }}>Companies</TableCell>
+            <TableCell align="right" sx={{
+              '@media (prefers-color-scheme: dark)': {
+                bgcolor: '#1a1a1a',
+                color: 'white',
+              },
+            }}>Programming Languages</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -47,8 +64,6 @@ function SolutionTable({ solutions }) {
                 '&:last-child td, &:last-child th': { border: 0 },
                 '@media (prefers-color-scheme: dark)': {
                   bgcolor: '#222',
-                  '& .MuiTableCell-head': {
-                  },
                 },
               }}
             >

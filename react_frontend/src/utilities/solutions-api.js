@@ -1,9 +1,9 @@
 import sendRequest from "./send-request";
 
-const BASE_URL = '/api/v1/solutions';
+const BASE_URL = '/api/solutions';
 
 export function fetchSolutions({ language, companies, difficulty }) {
-    let url = BASE_URL; // Assuming BASE_URL is something like 'http://localhost:5173/api/v1/solutions'
+    let url = BASE_URL; // Assuming BASE_URL is something like 'http://localhost:5173/api/solutions'
     const queryParams = [];
 
     // Check each filter and add to queryParams array if present
